@@ -78,7 +78,7 @@ CMD ["java","-jar","zuul-0.0.1-SNAPSHOT.jar"]
 ```
 
 ## Step 2: Pushing code to repository
-We push the code to the repository by running the commands below:
+From the local dev environment, we push the code to the repository by running the commands below:
 
 ```
 git status
