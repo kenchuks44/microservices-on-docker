@@ -98,6 +98,7 @@ git clone <repository_name>
 To build the docker images, run the command below:
 ```
 docker build . -t <microservice_name>
+```
 
 ![Screenshot (269)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/d3154047-f34f-4c41-b6b1-7d045a1ecd88)
 
