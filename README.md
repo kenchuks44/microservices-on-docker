@@ -135,7 +135,8 @@ docker run -d -p<host-port>:<container-port> <image-name>
 
 ![Screenshot (300)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/71a01666-c1a1-4002-b52f-bae4ef9427a7)
 
-Then, create an inbound rule to allow traffic on the specified port on the ui microservice
+## Access the application
+To access the application through a web browser, we create an inbound rule to allow traffic on the specified port on the ui microservice
 
 ![Screenshot (303)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/b3c398b0-7031-4ad8-818f-b279cd7a6fba)
 
