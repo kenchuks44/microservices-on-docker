@@ -88,13 +88,15 @@ git push
 ```
 ![Screenshot (265)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/ad43a5fa-4d9c-4482-a95f-cecc3205ff8e)
 
-## Step 3: Assess your repository on your docker host
+## Step 3: Assess your repository on your docker host and build docker images
 Here, we clone the repository to the server where docker is running and run 'docker build' command on each of the microservice directory where dockerfile is located
 
 To clone the repository, we run the command below:
 ```
 git clone <repository_name>
 ```
+![Screenshot (296)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/fd2d5eac-51b8-444a-be8f-4eadb8908b48)
+
 To build the docker images, run the command below:
 ```
 docker build . -t <microservice_name>
@@ -123,6 +125,22 @@ docker build . -t <microservice_name>
 ![Screenshot (282)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/49a57126-538c-4ed6-8b33-a5c5191a0c52)
 
 ![Screenshot (283)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/9289fc75-5300-4135-9534-c38dfd3f970c)
+
+## Step 4: Run docker images in containers
+Next, we run the created docker images in containers using the command below
+```
+docker run -d -p<host-port>:<container-port> <image-name>
+```
+![Screenshot (299)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/feabded8-a496-4a70-8b72-fd2436c42ab7)
+
+![Screenshot (300)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/71a01666-c1a1-4002-b52f-bae4ef9427a7)
+
+Then, create an inbound rule to allow traffic on the specified port on the ui microservice
+
+![Screenshot (303)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/b3c398b0-7031-4ad8-818f-b279cd7a6fba)
+
+![Screenshot (298)](https://github.com/kenchuks44/microservices-on-docker/assets/88329191/de4040c2-1b2f-4663-b63d-fd05e3fa5404)
+
 
 
 
