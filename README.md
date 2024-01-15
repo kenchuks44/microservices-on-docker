@@ -1,5 +1,5 @@
 # Deploying a microservice application using docker
-In this project, we demonstrate how to deploy a microservice application on docker. For each of the microservice, we will create a dockerfile, then build a docker image which will subsequently be deployed to a docker container.
+A microservice architecture structures an application as a collection of services that are independently deployable and loosely coupled, hence enabling agility, scalability, availability and reusability. In this project, we demonstrate how to deploy a microservice application on docker. For each of the microservices, we will create a dockerfile, then build a docker image which will subsequently be deployed to a docker container.
 
 # Application architecture
 
